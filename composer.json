@@ -16,5 +16,11 @@
         "peridot-php/peridot": "^1.19",
         "peridot-php/leo": "^1.6",
         "eloquent/phony-peridot": "^2.0"
-    }
+    },
+    "scripts": {
+        "test": [
+          "./vendor/bin/phpcs --standard=psr2 App/",
+          "./vendor/bin/peridot Test/"
+        ]
+     }
 }
